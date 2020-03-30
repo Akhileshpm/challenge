@@ -1,0 +1,36 @@
+<html>
+<head>
+<head>
+  <style>
+  #a,#b{
+    background-color: red;
+    text-align: center;
+    padding:10px;
+  }
+  #b{
+    display: none;
+  }
+  </style>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script>
+   $(document).ready(function(){
+    $("#a").click(function(){
+      $("#b").slideToggle("slow");
+    });
+  });
+  </script>
+</head>
+<body>
+  <h1> Click!</h1>
+      <b>this is a <span style="color:red;">SIMPLE</span> message</b>
+<div id="a">Click Here!</div>
+<div id="b">I was Hiding <. .>
+</div>
+
+
+
+</div>
+
+
+  </body>
+  </html>

@@ -1,0 +1,15 @@
+1.-----css----
+    *Universal Selector //format// asterisk(*){}
+    *tag selector//format// tagname{}
+    *id selector //format// #div1{} 
+    *class selector--->grouping divisions ,so that a group of divisions can be applied with same styles
+      //format//.class_name{}
+2.-----js----
+->console.log();
+->var variable_name;
+->prompt("question?");
+3. <span style="color:red"/style="color:rgba(r,g,b,transparency value);">Some Text </span> -->>It is used to color some part of text//
+4.Amongst every other web development i have seen so far the one in which i myself got interested is jQuery.It creates wonderful animations to a web page.
+-----.....---/////Basic syntax is: $(selector).action()\\\\\\.
+important to note : in animation , position should be set absolute inorder for movind a division 
+                  : in dropdown ,or slidetoggle in css properties , display should set none

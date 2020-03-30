@@ -1,0 +1,36 @@
+<html>
+<head>
+<style>
+  body{
+    background-color: blue;
+  }
+div{
+  background-color: cyan;
+  width:50px;
+}
+</style>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $("button").click(function(){
+        $("div").css("position","absolute").animate({width: '200px',left : '250px'}, "slow");
+        $("div").animate({fontSize: '6em'}, "slow");
+      });
+    });
+  </script>
+</head>
+<body>
+  <h1> Click!</h1>
+  <button>Click</button>
+  <div>apple</div>
+  <form action="/submit-cat-photo">
+    <label for="indoor"><input id="indoor" type="radio" name="indoor-outdoor" value="indoor" checked> Indoor</label>
+    <label for="outdoor"><input id="outdoor" type="radio" name="indoor-outdoor" value="outdoor"> Outdoor</label><br>
+    <label for="loving"><input id="loving" type="checkbox" name="personality" value="loving" checked> Loving</label>
+    <label for="lazy"><input id="lazy" type="checkbox" name="personality" value="lazy"> Lazy</label>
+    <label for="energetic"><input id="energetic" type="checkbox" name="personality" value="energetic"> Energetic</label><br>
+    <input type="text" placeholder="cat photo URL" required>
+    <button type="submit">Submit</button>
+  </form>
+  </body>
+  </html>
