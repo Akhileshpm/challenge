@@ -74,6 +74,25 @@ li{
   font-size:1.5rem;
 }
   </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script>
+  $(document).ready(function(){
+  $("#heading").click(function(){
+    var tab= $(".tab");
+    tab.slideToggle("fast");
+    $("#p").animate({fontSize:'3.5rem'},"slow");
+});
+});
+
+</script>
+
+  <script>
+  $(document).ready(function(){
+  $("#headline").click(function(){
+  $("#headline").animate({fontSize:'3.5rem'},"slow");
+});
+});
+  </script>
 </head>
 <body>
   <main id='main'>
