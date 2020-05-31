@@ -1,0 +1,78 @@
+--->git config --global user.name "example@mail.com"
+
+--->git init
+#initializes empty repository .git
+
+--->git add <file-name>
+
+--->git status
+#changes made are shown
+
+--->git commit
+
+--->git config -l 
+#details of users
+
+--->git commit -a -m "message of commit"
+#the above command skips staging area
+--->git clone <url of cloning>
+#copy the repo in to our local device
+--->git push 
+#pushed the changes into github
+--->git config --global credential.helper cache
+#caches username and pwd
+--->git pull
+#The git pull command is used to fetch and download content from a remote repository and immediately update the local repository to match that content. 
+--->git fetch
+#git pull = git fetch + git merge
+--->git remote show origin
+#tells us if our local repo clone is upto date
+
+--->git log 
+#shows the all commits lists not detailed
+
+--->git log -p
+#more details about commits,shows line by line change in the code(use q to exit).
+
+--->git show <unique id of a commit>
+# give detailed changes linebyline also about diff
+
+--->git diff
+#suddenly after a change is done to the file and when the code is run it shows
+ what is the difference current version and old v of the file .It only shows the changes that are unstaged.
+
+--->git rm <file_name>
+#this command del file from repo, only when commit is finished
+
+--->git mv <ol_file_name> <new_file_name>
+#file name changing , this also need to be committed
+
+--->git checkout <file_name>
+#to undo the changes before they are staged
+
+--->git reset HEAD <file_name>
+#to unstage the unwanted file
+
+--->git reset -p <particular_name>
+#to unstage a particular file
+
+--->git commit --ammend
+#In case, if we commit 1 file where 2  files were supposed to be committed then we could use this command.
+simply (Overwrite the previous commit) 
+
+--->git revert HEAD/commit ID
+#to undo any commit,but this doesn't mean that the commit has never happened
+--->git branch >branch name<
+#creates a new branch
+--->git checkout <newly created branch>
+#moves HEAD towards new branch
+--->git checkout -b <new_branch_name>
+#creation and moving in single command
+--->git merge new_feature_branch......before merging we have to be in the master branch
+#this command will merge the commits done on 'new_feature_branch'  to the master branch
+|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+.....                                                                               .......
+.....Merge conflict : when we are trying to merge a branch in which the change we have ....
+.....done is already committed in the master branch at the same part of the same file,this .....problem arises.                                                                .......
+|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+--->After mergeing from other branch we have  to do git commit
