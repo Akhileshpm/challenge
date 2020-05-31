@@ -10,25 +10,25 @@
 
 --->git commit
 
---->git config -l 
+--->git config -l
 #details of users
 
 --->git commit -a -m "message of commit"
 #the above command skips staging area
 --->git clone <url of cloning>
 #copy the repo in to our local device
---->git push 
+--->git push
 #pushed the changes into github
 --->git config --global credential.helper cache
 #caches username and pwd
 --->git pull
-#The git pull command is used to fetch and download content from a remote repository and immediately update the local repository to match that content. 
+#The git pull command is used to fetch and download content from a remote repository and immediately update the local repository to match that content.
 --->git fetch
 #git pull = git fetch + git merge
 --->git remote show origin
 #tells us if our local repo clone is upto date
 
---->git log 
+--->git log
 #shows the all commits lists not detailed
 
 --->git log -p
@@ -58,7 +58,7 @@
 
 --->git commit --ammend
 #In case, if we commit 1 file where 2  files were supposed to be committed then we could use this command.
-simply (Overwrite the previous commit) 
+simply (Overwrite the previous commit)
 
 --->git revert HEAD/commit ID
 #to undo any commit,but this doesn't mean that the commit has never happened
