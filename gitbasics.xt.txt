@@ -29,6 +29,8 @@
 #tells us if our local repo clone is upto date
 --->git push -u origin <new_branch_name>
 #this creates our new branch in remote repo and then push the changes
+--->git push --delete origin <branch_name>
+#deletes branch from remote branch
 --->git log
 #shows the all commits lists not detailed
 
